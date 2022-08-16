@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <header id="header">
-      <a id="logo" href="/">{"<Diogo/>"}</a>
+      <a id="logo" href="/">{"</Diogo>"}</a>
       <nav id="nav" className={toggleMenu}>
         <button
           onClick={() => toggleState()}
@@ -28,16 +28,16 @@ const Header = () => {
         </button>
         <ul id="menu" role="menu">
           <li>
-            <a href="/">Home</a>
+            <a onClick={() => setToggleMenu("disabled")} href="/">Home</a>
           </li>
           <li>
-            <a href="/">Sobre mim</a>
+            <a onClick={() => setToggleMenu("disabled")} href="#about-section">Sobre mim</a>
           </li>
           <li>
-            <a href="/">Projetos</a>
+            <a onClick={() => setToggleMenu("disabled")} href="/">Projetos</a>
           </li>
           <li>
-            <a href="/">Contato</a>
+            <a onClick={() => setToggleMenu("disabled")} href="/">Contato</a>
           </li>
         </ul>
       </nav>
