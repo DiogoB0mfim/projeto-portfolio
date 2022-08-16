@@ -51,10 +51,12 @@
 .div-btn button {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-right: 1rem;
     padding-left: 1rem;
     border-radius: 4px;
     gap: 15px;
+    width: 140px;
     color: #ffff;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -83,23 +85,9 @@
     .me-happy  {
         display: none;
     }
-
-    .div-about {
-        display: flex;
-        color: white;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #151515;
-        margin-bottom: 100px;
-        padding: 50px;
-    }
-    
+ 
     .container-about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 99%;
-        gap: 20px;
+        width: 100%;
     }
 
     .div-btn {
@@ -107,16 +95,10 @@
     }
 
     .div-btn button {
-        padding-right: 0.5rem;
-        padding-left:  0.5rem;
         gap: 15px;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        padding-left: 1.0rem;
-        padding-right: 1.0rem;
+        width: 122px;
     }
     .div-btn img {
         width: 18px;
-    }
-    
+    } 
 }

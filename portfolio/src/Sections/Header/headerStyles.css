@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
-header {
-  border-bottom: 1px solid #151515
-}
-
 a {
   color: #ffff;
   text-decoration: none;
@@ -28,6 +24,9 @@ a:hover {
   gap: 2.8rem;
   justify-content: space-around;
   background: #121212;
+  border-bottom: 1px solid #151515;
+  position: sticky;
+  top: 0;
 }
 
 #menu {
