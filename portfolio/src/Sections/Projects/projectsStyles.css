@@ -28,10 +28,24 @@
     align-items: center;
 }
 
+.project p {
+    color: white;
+    position: absolute;
+    bottom: 100px;
+    width: 250px;
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
 .project img{
     height: 500px;
-    width: 290px;
+    width: 288px;
     border-radius: 15px;
+    transition: 0.3s;
+}
+
+.project img:hover {
+    opacity: 0.5;
 }
 
 .container-btn {
