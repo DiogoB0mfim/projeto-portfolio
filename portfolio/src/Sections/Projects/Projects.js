@@ -4,19 +4,26 @@ import projectThree from "../../Assets/projectPokedex.png"
 import projectTwo from "../../Assets/projectFoodJP.png"
 import github from "../../Assets/github.png"
 import deploy from "../../Assets/deploy.png"
-import { useState } from "react"
+// Import Icons 
+import react from "../../Assets/react-icon.svg"
+import html from "../../Assets/html-icon.svg"
+import js from "../../Assets/js-icon.svg"
+import css from "../../Assets/css-icon.svg"
+import styled from "../../Assets/styled-icon.png"
+import material from "../../Assets/material-icon.png"
 // Import Swiper 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import { FreeMode} from "swiper";
+import { useState } from "react"
 
 
 const Projects = () => {
-    const [descriptionP1, setDescriptionP1] = useState("")
-    const [descriptionP2, setDescriptionP2] = useState("")
-    const [descriptionP3, setDescriptionP3] = useState("")
-    
+   const [showIconP1, setShowIconP1] = useState("opacity0")
+   const [showIconP2, setShowIconP2] = useState("opacity0")
+   const [showIconP3, setShowIconP3] = useState("opacity0")
+
     return (
         <div className="div-projects-section">
             <div className="title">
@@ -26,18 +33,16 @@ const Projects = () => {
                 <Swiper 
                     breakpoints={{
                         600: {
-                            width: 600,
                             slidesPerView: 1,
                         },
 
                         601: {
-                            width: 601,
                             slidesPerView: 2,
                         },
 
-                        916: {
-                            width: 916,
+                        1185: {
                             slidesPerView: 3,
+                            width: 1185
                         }
                     }}
                     spaceBetween={30}
@@ -45,47 +50,68 @@ const Projects = () => {
                     pagination={{clickable: true,}}
                     modules={[FreeMode]}
                     className="mySwiper">
-                        
                     <SwiperSlide>
                         <div className="project">
-                            <img 
-                                src={projectOne}
-                                onMouseOver={() => 
-                                    setDescriptionP1("O Rappi4, foi proposto pela Labenu com intenção de colocar em prática o conhecimento do módulo front-end. Tem o intuito de simular uma aplicação web para pedidos.")}
-                                onMouseOut={() => setDescriptionP1("")}
+                            <div className={showIconP1}>
+                                <img src={react} className="img-hover" alt="icone-react"/>
+                                <img src={styled} className="img-hover" alt="icone-styled"/>
+                                <img src={material} className="img-hover" alt="icone-material"/>
+                            </div>
+                            <div className="project-img">
+                                <img 
+                                    src={projectOne}
+                                    onMouseOver={() => setShowIconP1("opacity1")}
+                                    onMouseOut={() => setShowIconP1("opacity0")}
+                                    alt="icone-projeto"
                                 />
-                            <p>{descriptionP1}</p>
+                            </div>
                             <div className="container-btn">
-                                <button className="btn-git"><img src={github}/>GitHub</button>
-                                <button className="btn-deploy"><img src={deploy}/>Visualizar</button>
+                                <button className="btn-git"><img src={github} alt="icone-github"/>GitHub</button>
+                                <button className="btn-deploy"><img src={deploy} alt="icone-deploy"/>Visualizar</button>
                             </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="project">
-                            <img src={projectTwo}
-                            onMouseOver={() => 
-                                setDescriptionP2("O FoodJP é um projeto do desafio nº27 da comunidade Codelandia, com o design desenvolvido pelo Iuri Silva. Utilizei deste desafio para consolidar meu conhecimento em HTML, CSS e JS.")}
-                            onMouseOut={() => setDescriptionP2("")}
-                            />
-                            <p>{descriptionP2}</p>
+                            <div className={showIconP2}>
+                                <img src={html} className="img-hover" alt="icone-html"/>
+                                <img src={css} className="img-hover" id="css-icon" alt="icone-css"/>
+                                <img src={js} className="img-hover" alt="icone-js"/>
+                            </div>
+                            <div className="project-img">
+                                <img 
+                                    src={projectTwo}
+                                    onMouseOver={() => setShowIconP2("opacity1")}
+                                    onMouseOut={() => setShowIconP2("opacity0")}
+                                    alt="icone-projeto"
+                                />
+                            </div>
                             <div className="container-btn">
-                                <button className="btn-git"><img src={github}/>GitHub</button>
-                                <button className="btn-deploy"><img src={deploy}/>Visualizar</button>
+                                <button className="btn-git"><img src={github} alt="icone-github"/>GitHub</button>
+                                <button className="btn-deploy"><img src={deploy} alt="icone-deploy"/>Visualizar</button>
                             </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="project">
-                            <img src={projectThree}
-                             onMouseOver={() => 
-                                setDescriptionP3("O Pokédex foi feito com o intuito de simular um site com mais de 1000 pokémons extraidos da PokéAPI e com algumas funcionalidades, dentre elas adicionar, excluir e ver detalhes dos pokémons.")}
-                            onMouseOut={() => setDescriptionP3("")}
-                            />
-                            <p>{descriptionP3}</p>
+                            <div className={showIconP3}>
+                                <img src={react} className="img-hover" alt="icone-react"/>
+                                <img src={material} className="img-hover" alt="icone-material"/>
+                                <img src={css} className="img-hover" id="css-icon" alt="icone-css"/>
+                            </div>
+
+                            <div className="project-img">
+                                <img 
+                                    src={projectThree}
+                                    onMouseOver={() => setShowIconP3("opacity1")}
+                                    onMouseOut={() => setShowIconP3("opacity0")}
+                                    alt="icone-projeto"
+                                />
+                            </div>
+                            
                             <div className="container-btn">
-                                <button className="btn-git"><img src={github}/>GitHub</button>
-                                <button className="btn-deploy"><img src={deploy}/>Visualizar</button>
+                                <button className="btn-git"><img src={github} alt="icone-github"/>GitHub</button>
+                                <button className="btn-deploy"><img src={deploy} alt="icone-deploy"/>Visualizar</button>
                             </div>
                         </div>
                     </SwiperSlide>
