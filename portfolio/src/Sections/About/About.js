@@ -9,7 +9,7 @@ const About = () => {
         <div id="about-section" className="div-about">
             <img src={mehappy} className="me-happy"/>
             <div className="container-about">
-                <h2 className="about-h2">SOBRE MIM</h2>
+                <h1 className="about-h1">SOBRE MIM</h1>
                 <h3>Aracaju - SE</h3>
                 <p>Sou desenvolvedor Front-end em formação. Desde o início do ano venho 
                     aprimorando meus conhecimentos em desenvolvimento web e realizando vários projetos, tanto individuais quanto 
