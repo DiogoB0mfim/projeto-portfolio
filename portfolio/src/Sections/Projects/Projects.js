@@ -36,7 +36,7 @@ const Projects = () => {
                             slidesPerView: 1,
                         },
 
-                        601: {
+                        750: {
                             slidesPerView: 2,
                         },
 
