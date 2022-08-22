@@ -25,7 +25,7 @@ const Projects = () => {
    const [showIconP3, setShowIconP3] = useState("opacity0")
 
     return (
-        <div className="div-projects-section">
+        <div id="project-section" className="div-projects-section">
             <div className="title">
                 <h1>PROJETOS</h1>
             </div>

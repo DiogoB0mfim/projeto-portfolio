@@ -11,10 +11,15 @@ const Header = () => {
       setToggleMenu("disabled");
     }
   }
+  //window.scrollTo(0, 750)
+  const scrollTop = (param) => {
+    window.scrollTo(0, param)
+    setToggleMenu("disabled")
+  }
 
   return (
     <header id="header">
-      <a id="logo" href="/">{"</Diogo>"}</a>
+      <a id="logo">{"</Diogo>"}</a>
       <nav id="nav" className={toggleMenu}>
         <button
           onClick={() => toggleState()}
@@ -28,16 +33,16 @@ const Header = () => {
         </button>
         <ul id="menu" role="menu">
           <li>
-            <a onClick={() => setToggleMenu("disabled")} href="/">Home</a>
+            <a onClick={() => scrollTop(0)}>Home</a>
           </li>
           <li>
-            <a onClick={() => setToggleMenu("disabled")} href="#about-section">Sobre mim</a>
+            <a href="#about-section" onClick={() => setToggleMenu("disabled")}>Sobre mim</a>
           </li>
           <li>
-            <a onClick={() => setToggleMenu("disabled")} href="/">Projetos</a>
+            <a href="#project-section" onClick={() => setToggleMenu("disabled")}>Projetos</a>
           </li>
           <li>
-            <a onClick={() => setToggleMenu("disabled")} href="/">Contato</a>
+            <a href="#tech-section" onClick={() => setToggleMenu("disabled")}>Tecnologias</a>
           </li>
         </ul>
       </nav>

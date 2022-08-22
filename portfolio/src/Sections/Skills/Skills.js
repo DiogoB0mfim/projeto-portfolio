@@ -15,7 +15,7 @@ const Skills = () => {
   const defaultDescription = "*Passe o mouse ou clique nos ícones para ler*"
   
   return (
-    <div className="div-tecnologies">
+    <div id="tech-section" className="div-tecnologies">
       <div className="container-title-about">
         <h1>Tecnologias</h1>
         <div className="description">
