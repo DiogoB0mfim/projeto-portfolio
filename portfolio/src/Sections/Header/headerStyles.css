@@ -1,13 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
-a {
+/* Estilização Header */	
+#header a {
+  color: #ffff;
+}
+
+#menu a {
   color: #ffff;
   text-decoration: none;
   cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 500ms;
+  transition-property: color;
 }
 
-a:hover {
-  background: rgba(0, 0, 0, 0.05);
+#menu a:focus:after,
+#menu a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+#menu a:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #ffff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 500ms;
+  transition-property: width, left;
 }
 
 #logo {
@@ -45,7 +72,8 @@ a:hover {
   display: none;
 }
 
-@media (max-width: 600px) {
+/*Responsividade mobile*/
+@media (max-width: 650px) {
   #header {
     justify-content: space-between;
   }

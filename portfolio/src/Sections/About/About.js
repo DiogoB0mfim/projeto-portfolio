@@ -15,16 +15,21 @@ const About = () => {
                     aprimorando meus conhecimentos em desenvolvimento web e realizando vários projetos, tanto individuais quanto 
                     em equipe. Venho me dedicando cada vez mais a área pois sempre gostei bastante de lógica e resolver problemas.</p>
                 <div className="div-btn">
-                    <button 
-                        className="btn-resume">
-                        <img src={cloud}/>
-                        Currículo
-                    </button>
-                    <button 
-                    className="btn-email">
-                    <img src={mail}/>
-                    E-mail
-                    </button>
+                    
+                    <a href="https://drive.google.com/file/d/1H---Et8yZ1phzMuJR7KAAJk_rN2R4_aY/view?usp=download" target="blank">
+                        <button className="btn-resume">
+                            <img src={cloud}/>
+                            Currículo
+                        </button>
+                    </a>
+                    
+                    <a href="mailto:diogohbomfim@gmail.com?Subject=Olá, desejo entrar em contato" target="blank">
+                        <button 
+                            className="btn-email">
+                            <img src={mail}/>
+                            E-mail
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
