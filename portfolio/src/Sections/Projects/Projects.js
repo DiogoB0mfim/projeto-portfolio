@@ -18,7 +18,6 @@ import "swiper/css/free-mode";
 import { FreeMode} from "swiper";
 import { useState } from "react"
 
-
 const Projects = () => {
    const [showIconP1, setShowIconP1] = useState("opacity0")
    const [showIconP2, setShowIconP2] = useState("opacity0")
@@ -66,8 +65,12 @@ const Projects = () => {
                                 />
                             </div>
                             <div className="container-btn">
-                                <button className="btn-git"><img src={github} alt="icone-github"/>GitHub</button>
-                                <button className="btn-deploy"><img src={deploy} alt="icone-deploy"/>Visualizar</button>
+                                <a href="https://github.com/DiogoB0mfim/hooks-labe-food4" target="blank">
+                                    <button className="btn-git"><img src={github} alt="icone-github"/>GitHub</button>
+                                </a>
+                                <a href="https://nostalgic-fear.surge.sh/" target="blank">
+                                    <button className="btn-deploy"><img src={deploy} alt="icone-deploy"/>Visualizar</button>
+                                </a>
                             </div>
                         </div>
                     </SwiperSlide>
@@ -87,8 +90,12 @@ const Projects = () => {
                                 />
                             </div>
                             <div className="container-btn">
-                                <button className="btn-git"><img src={github} alt="icone-github"/>GitHub</button>
-                                <button className="btn-deploy"><img src={deploy} alt="icone-deploy"/>Visualizar</button>
+                                <a href="https://github.com/DiogoB0mfim/Projeto-FoodJP" target="blank">
+                                    <button className="btn-git"><img src={github} alt="icone-github"/>GitHub</button>
+                                </a>
+                                <a href="https://projeto-foodjp.vercel.app/" target="blank">
+                                    <button className="btn-deploy"><img src={deploy} alt="icone-deploy"/>Visualizar</button>
+                                </a>
                             </div>
                         </div>
                     </SwiperSlide>
@@ -110,8 +117,12 @@ const Projects = () => {
                             </div>
                             
                             <div className="container-btn">
-                                <button className="btn-git"><img src={github} alt="icone-github"/>GitHub</button>
-                                <button className="btn-deploy"><img src={deploy} alt="icone-deploy"/>Visualizar</button>
+                                <a href="https://github.com/DiogoB0mfim/Projeto-pokedex" target="blank">
+                                    <button className="btn-git"><img src={github} alt="icone-github"/>GitHub</button>
+                                </a>
+                                <a href="https://pokedex-project-one.vercel.app/" target="blank">
+                                    <button className="btn-deploy"><img src={deploy} alt="icone-deploy"/>Visualizar</button>
+                                </a>
                             </div>
                         </div>
                     </SwiperSlide>

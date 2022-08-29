@@ -11,6 +11,10 @@
     background-color: #121212;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*Estilização Hgroup */
 hgroup {
     display: flex;
@@ -51,6 +55,7 @@ img {
     padding-bottom: 0.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    cursor: pointer;
 }
 
 .btn-linkedin {
