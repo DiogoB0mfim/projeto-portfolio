@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <header id="header">
-      <a id="logo">{"</Diogo>"}</a>
+      <p id="logo" onClick={() => scrollTop()}>{"</Diogo>"}</p>
       <nav id="nav" className={toggleMenu}>
         <button
           onClick={() => toggleState()}

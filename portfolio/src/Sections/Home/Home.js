@@ -8,7 +8,7 @@ const Home = () => {
                 <hgroup>
                     <h2>OLÁ, EU SOU</h2>
                     <h1>Diogo Bomfim</h1>
-                    <h2>DESENVOLVEDOR FRONT-END.</h2>
+                    <h2>DESENVOLVEDOR WEB FULLSTACK</h2>
                     <div className="div-buttons">
                     
                     <a target="blank" href="https://www.linkedin.com/in/diogo-b0mfim/">

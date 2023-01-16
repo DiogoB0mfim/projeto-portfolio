@@ -7,18 +7,18 @@ const About = () => {
     
     return (
         <div id="about-section" className="div-about">
-            <img src={mehappy} className="me-happy"/>
+            <img src={mehappy} className="me-happy" alt="personagem feliz"/>
             <div className="container-about">
                 <h1 className="about-h1">SOBRE MIM</h1>
                 <h3>Aracaju - SE</h3>
-                <p>Sou desenvolvedor Front-end em formação. Desde o início do ano venho 
+                <p>Sou desenvolvedor Web FullStack. Desde 2020 venho 
                     aprimorando meus conhecimentos em desenvolvimento web e realizando vários projetos, tanto individuais quanto 
                     em equipe. Venho me dedicando cada vez mais a área pois sempre gostei bastante de lógica e resolver problemas.</p>
                 <div className="div-btn">
                     
                     <a href="https://drive.google.com/file/d/1H---Et8yZ1phzMuJR7KAAJk_rN2R4_aY/view?usp=download" target="blank">
                         <button className="btn-resume">
-                            <img src={cloud}/>
+                            <img src={cloud} alt="icone cloud"/>
                             Currículo
                         </button>
                     </a>
@@ -26,7 +26,7 @@ const About = () => {
                     <a href="mailto:diogohbomfim@gmail.com?Subject=Olá, desejo entrar em contato" target="blank">
                         <button 
                             className="btn-email">
-                            <img src={mail}/>
+                            <img src={mail} alt="icone email"/>
                             E-mail
                         </button>
                     </a>

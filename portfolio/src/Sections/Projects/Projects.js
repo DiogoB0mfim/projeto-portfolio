@@ -2,8 +2,13 @@ import "./projectsStyles.css"
 import projectOne from "../../Assets/projectRappi.png"
 import projectThree from "../../Assets/projectPokedex.png"
 import projectTwo from "../../Assets/projectFoodJP.png"
+import projectFour from "../../Assets/shopper.png"
+import projectFive from "../../Assets/wirecard.png"
 import github from "../../Assets/github.png"
 import deploy from "../../Assets/deploy.png"
+import typescript from "../../Assets/typescript-projects.png"
+import mysql from "../../Assets/mysql.png"
+import expressjs from "../../Assets/expressjs.png"
 // Import Icons 
 import react from "../../Assets/react-icon.svg"
 import html from "../../Assets/html-icon.svg"
@@ -22,11 +27,13 @@ const Projects = () => {
    const [showIconP1, setShowIconP1] = useState("opacity0")
    const [showIconP2, setShowIconP2] = useState("opacity0")
    const [showIconP3, setShowIconP3] = useState("opacity0")
+   const [showIconP4, setShowIconP4] = useState("opacity0")
+   const [showIconP5, setShowIconP5] = useState("opacity0")
 
     return (
         <div id="project-section" className="div-projects-section">
             <div className="title">
-                <h1>PROJETOS</h1>
+                <h1>{"PROJETOS ->"}</h1>
             </div>
             <div className="container-projetos">
                 <Swiper 
@@ -121,6 +128,60 @@ const Projects = () => {
                                     <button className="btn-git"><img src={github} alt="icone-github"/>GitHub</button>
                                 </a>
                                 <a href="https://pokedex-project-one.vercel.app/" target="blank">
+                                    <button className="btn-deploy"><img src={deploy} alt="icone-deploy"/>Visualizar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="project">
+                            <div className={showIconP4}>
+                                <img src={react} className="img-hover" alt="icone-react"/>
+                                <img src={styled} className="img-hover" alt="icone-styled"/>
+                                <img src={material} className="img-hover" id="css-icon" alt="icone-material"/>
+                            </div>
+
+                            <div className="project-img">
+                                <img 
+                                    src={projectFour}
+                                    onMouseOver={() => setShowIconP4("opacity1")}
+                                    onMouseOut={() => setShowIconP4("opacity0")}
+                                    alt="icone-projeto"
+                                />
+                            </div>
+                            
+                            <div className="container-btn">
+                                <a href="https://github.com/DiogoB0mfim/teste-tecnico-shopper" target="blank">
+                                    <button className="btn-git"><img src={github} alt="icone-github"/>GitHub</button>
+                                </a>
+                                <a href="https://github.com/DiogoB0mfim/teste-tecnico-shopper" target="blank">
+                                    <button className="btn-deploy"><img src={deploy} alt="icone-deploy"/>Visualizar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="project">
+                            <div className={showIconP5}>
+                                <img src={typescript} className="img-hover" alt="icone-typescript"/>
+                                <img src={mysql} className="img-hover" alt="icone-mysql"/>
+                                <img src={expressjs} className="img-hover" id="css-icon" alt="icone-expressjs"/>
+                            </div>
+
+                            <div className="project-img">
+                                <img 
+                                    src={projectFive}
+                                    onMouseOver={() => setShowIconP5("opacity1")}
+                                    onMouseOut={() => setShowIconP5("opacity0")}
+                                    alt="icone-projeto"
+                                />
+                            </div>
+                            
+                            <div className="container-btn">
+                                <a href="https://github.com/DiogoB0mfim/case-wirecard" target="blank">
+                                    <button className="btn-git"><img src={github} alt="icone-github"/>GitHub</button>
+                                </a>
+                                <a href="https://github.com/DiogoB0mfim/case-wirecard" target="blank">
                                     <button className="btn-deploy"><img src={deploy} alt="icone-deploy"/>Visualizar</button>
                                 </a>
                             </div>

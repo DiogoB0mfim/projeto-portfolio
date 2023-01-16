@@ -1,7 +1,6 @@
 import "./skillsStyles.css";
 import { useState } from "react";
 // import icones
-import html from "../../Assets/html-tech.png";
 import css from "../../Assets/css-tech.png";
 import js from "../../Assets/js-tech.png";
 import typeScript from "../../Assets/typescript-tech.png";
@@ -9,6 +8,7 @@ import react from "../../Assets/react-tech.png";
 import material from "../../Assets/material-tech.png";
 import styled from "../../Assets/styled-tech.png";
 import git from "../../Assets/git-tech.png";
+import mysql from "../../Assets/mysql-tech.png"
 
 const Skills = () => {
   const [description, setDescription] = useState("*Passe o mouse ou clique nos ícones para ler*");
@@ -24,9 +24,9 @@ const Skills = () => {
       </div>
       <div className="container-tecnologies">
         <img 
-            src={html} 
-            alt="icone-html" 
-            onMouseOver={() => setDescription("HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores.")}
+            src={mysql} 
+            alt="icone-mysql" 
+            onMouseOver={() => setDescription("MySQL é um sistema de gerenciamento de banco de dados relacional (RDBMS) de código aberto amplamente utilizado na web.")}
             onMouseOut={() => setDescription(defaultDescription)} 
             />
         <img 
